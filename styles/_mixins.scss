@@ -1,0 +1,43 @@
+@mixin headingXL {
+  font-family: "Plus-Jakarta-Sans-Extra-Bold";
+  font-size: 56px;
+  line-height: 70px;
+}
+
+@mixin headingL {
+  font-family: "Plus-Jakarta-Sans-Extra-Bold";
+  font-size: 40px;
+  line-height: 51px;
+}
+
+@mixin headingM {
+  font-family: "Plus-Jakarta-Sans-Extra-Bold";
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@mixin headingS {
+  font-family: "Plus-Jakarta-Sans-Extra-Bold";
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin bodyM {
+  font-family: "Plus-Jakarta-Sans-Medium";
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@mixin bodyM {
+  font-family: "Plus-Jakarta-Sans-Bold";
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@mixin orange-pink {
+  background-color: linear-gradient(#f02aa6, #ff6f48);
+}
+
+@mixin purple-pink {
+  background-color: linear-gradient(#4851ff, #f02aa6);
+}

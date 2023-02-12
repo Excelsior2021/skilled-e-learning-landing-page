@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 @mixin headingXL {
   font-family: "Plus-Jakarta-Sans-Extra-Bold";
   font-size: 56px;
@@ -28,16 +30,22 @@
   line-height: 28px;
 }
 
-@mixin bodyM {
+@mixin bodyS {
   font-family: "Plus-Jakarta-Sans-Bold";
   font-size: 16px;
   line-height: 28px;
 }
 
 @mixin orange-pink {
-  background-color: linear-gradient(#f02aa6, #ff6f48);
+  background: linear-gradient(#ff6f48, #f02aa6);
 }
 
 @mixin purple-pink {
-  background-color: linear-gradient(#4851ff, #f02aa6);
+  background: linear-gradient(#4851ff, #f02aa6);
+}
+
+@mixin button {
+  color: $white;
+  text-transform: capitalize;
+  border: none;
 }

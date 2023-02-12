@@ -19,3 +19,4 @@ node_modules
 README-template.md
 README-Frontend-Mentor.md
 preview.jpg
+*.css.map

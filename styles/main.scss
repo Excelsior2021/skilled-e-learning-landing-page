@@ -10,11 +10,18 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
+  position: relative;
   font-size: 1.6rem;
   font-family: "Plus-Jakarta-Sans-Extra-Bold";
   background: linear-gradient(white, #f2f2f2);
@@ -22,9 +29,23 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
+  justify-content: center;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 16px;
+
+    @include media-tablet {
+      margin: 24px 40px;
+    }
+
+    @include media-desktop {
+      max-width: 1024px;
+      // margin: 24px auto;
+    }
+  }
 
   &__button {
     @include bodyM;
@@ -33,11 +54,94 @@ body {
     height: 48px;
     background-color: $navy;
     border-radius: 28px;
+    z-index: 10;
+
+    &:hover {
+      opacity: 1;
+      background-color: $purple;
+    }
   }
 }
 
 .main {
-  padding: 16px;
+  margin: 16px;
+  overflow-x: hidden;
+
+  @include media-tablet {
+    margin: 24px 40px;
+  }
+
+  &__section {
+    @include media-tablet {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 150px;
+    }
+
+    @include media-desktop {
+      max-width: 1024px;
+      margin: auto;
+      margin-top: 200px;
+    }
+  }
+
+  &__section-heading {
+    @include headingS;
+    @include orange-pink;
+    color: $white;
+    height: 120px;
+    border-radius: 10px;
+    padding-top: 28px;
+    padding-left: 28px;
+    margin-bottom: 40px;
+
+    @include media-tablet {
+      width: 320px;
+      height: 260px;
+      margin: 40px 10px;
+      padding-top: 56px;
+      padding-left: 32px;
+    }
+
+    @include media-desktop {
+      @include headingM;
+      height: 322px;
+      padding-top: 64px;
+    }
+  }
+}
+
+.hero {
+  @include media-desktop {
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  &__content {
+    @include media-tablet {
+      width: 398px;
+      margin-top: 100px;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+
+    @include media-tablet {
+      position: absolute;
+      top: -80px;
+      left: 380px;
+    }
+
+    @include media-desktop {
+      top: -220px;
+      left: 480px;
+      right: 0;
+    }
+  }
 
   &__heading {
     @include headingL;
@@ -51,12 +155,6 @@ body {
     margin-bottom: 24px;
   }
 
-  &__hero {
-    display: block;
-    margin: auto;
-    max-width: 100%;
-  }
-
   &__button {
     @include bodyS;
     @include orange-pink;
@@ -66,58 +164,86 @@ body {
     border-radius: 31.5px;
     margin-bottom: 24px;
   }
+}
 
-  &__section-heading {
-    @include headingS;
-    @include orange-pink;
-    color: $white;
-    height: 120px;
-    border-radius: 10px;
-    padding-top: 28px;
-    padding-left: 28px;
-    margin-bottom: 40px;
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  margin: 40px auto;
+  padding: 28px;
+  padding-bottom: 32px;
+  border-radius: 10px;
+
+  @include media-tablet {
+    width: 320px;
+    height: 260px;
+    margin: 40px 10px;
   }
 
-  &__card {
-    position: relative;
-    background-color: white;
-    margin: 40px auto;
-    padding: 28px;
-    padding-bottom: 32px;
-    border-radius: 10px;
+  @include media-desktop {
+    height: 322px;
   }
 
-  &__card-icon {
+  &--odd {
+    @include media-tablet {
+      margin-left: 4px;
+    }
+  }
+
+  &--even {
+    @include media-tablet {
+      margin-right: 4px;
+    }
+  }
+
+  &__icon {
     position: absolute;
     top: -24px;
   }
 
-  &__card-heading {
+  &__heading {
     color: $navy;
     text-transform: capitalize;
-    margin-top: 56px;
+    margin-top: 24px;
     margin-bottom: 16px;
+
+    @include media-desktop {
+      @include headingS;
+    }
   }
 
-  &__card-text {
-    @include bodyS;
+  &__text {
+    font-family: "Plus-Jakarta-Sans-Medium";
+    line-height: 26px;
     color: $grey;
     margin-bottom: 24px;
+
+    @include media-desktop {
+      @include bodyM;
+    }
   }
 
-  &__card-link {
+  &__link {
     color: $pink;
     text-transform: capitalize;
   }
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: $navy;
-  height: 120px;
-  padding: 16px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    height: 120px;
+    margin: auto;
+    padding: 16px;
+  }
 
   &__button {
     @include bodyM;

@@ -65,21 +65,30 @@ body {
   }
 }
 .header__button {
-  font-family: "Plus-Jakarta-Sans-Medium";
-  font-size: 18px;
+  font-family: "Plus-Jakarta-Sans-Bold";
+  font-size: 16px;
   line-height: 28px;
   cursor: pointer;
   color: white;
   text-transform: capitalize;
-  border: none;
   width: 140px;
   height: 48px;
+  border: none;
   background-color: #13183f;
   border-radius: 28px;
   z-index: 10;
 }
 .header__button:hover {
   opacity: 0.5;
+}
+@media (min-width: 1110px) {
+  .header__button {
+    font-family: "Plus-Jakarta-Sans-Medium";
+    font-size: 18px;
+    line-height: 28px;
+    width: 167px;
+    height: 56px;
+  }
 }
 .header__button:hover {
   opacity: 1;
@@ -127,6 +136,11 @@ body {
     margin-top: 100px;
   }
 }
+@media (min-width: 1110px) {
+  .hero__content {
+    width: 457px;
+  }
+}
 @media (min-width: 768px) {
   .hero__image-container {
     position: absolute;
@@ -152,6 +166,13 @@ body {
   color: #13183f;
   margin-bottom: 26px;
 }
+@media (min-width: 1110px) {
+  .hero__heading {
+    font-family: "Plus-Jakarta-Sans-Extra-Bold";
+    font-size: 56px;
+    line-height: 70px;
+  }
+}
 .hero__text {
   font-family: "Plus-Jakarta-Sans-Bold";
   font-size: 16px;
@@ -159,15 +180,29 @@ body {
   color: #83869a;
   margin-bottom: 24px;
 }
+@media (min-width: 1110px) {
+  .hero__text {
+    font-family: "Plus-Jakarta-Sans-Medium";
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
 .hero__button {
   font-family: "Plus-Jakarta-Sans-Bold";
   font-size: 16px;
   line-height: 28px;
   background: linear-gradient(#ff6f48, #f02aa6);
+  font-family: "Plus-Jakarta-Sans-Bold";
+  font-size: 16px;
+  line-height: 28px;
   cursor: pointer;
   color: white;
   text-transform: capitalize;
+  width: 140px;
+  height: 48px;
   border: none;
+  width: 167px;
+  height: 56px;
   width: 167px;
   height: 56px;
   border-radius: 31.5px;
@@ -175,6 +210,27 @@ body {
 }
 .hero__button:hover {
   opacity: 0.5;
+}
+@media (min-width: 1110px) {
+  .hero__button {
+    font-family: "Plus-Jakarta-Sans-Medium";
+    font-size: 18px;
+    line-height: 28px;
+    width: 167px;
+    height: 56px;
+  }
+}
+@media (min-width: 1110px) {
+  .hero__button {
+    height: 63px;
+  }
+}
+@media (min-width: 1110px) {
+  .hero__button {
+    font-family: "Plus-Jakarta-Sans-Medium";
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .card {
@@ -205,6 +261,13 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: white;
+}
+@media (min-width: 1110px) {
+  .card__section-heading {
+    font-family: "Plus-Jakarta-Sans-Extra-Bold";
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .card--heading {
   background: linear-gradient(#ff6f48, #f02aa6);
@@ -284,12 +347,14 @@ body {
   }
 }
 .footer__button {
-  font-family: "Plus-Jakarta-Sans-Medium";
-  font-size: 18px;
+  font-family: "Plus-Jakarta-Sans-Bold";
+  font-size: 16px;
   line-height: 28px;
   cursor: pointer;
   color: white;
   text-transform: capitalize;
+  width: 140px;
+  height: 48px;
   border: none;
   background: linear-gradient(#4851ff, #f02aa6);
   width: 140px;
@@ -298,4 +363,13 @@ body {
 }
 .footer__button:hover {
   opacity: 0.5;
+}
+@media (min-width: 1110px) {
+  .footer__button {
+    font-family: "Plus-Jakarta-Sans-Medium";
+    font-size: 18px;
+    line-height: 28px;
+    width: 167px;
+    height: 56px;
+  }
 }/*# sourceMappingURL=main.css.map */

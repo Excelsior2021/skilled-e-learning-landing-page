@@ -45,13 +45,31 @@
 }
 
 @mixin button {
+  @include bodyS;
   cursor: pointer;
   color: $white;
   text-transform: capitalize;
+  width: 140px;
+  height: 48px;
   border: none;
 
   &:hover {
     opacity: 0.5;
+  }
+
+  @include media-desktop {
+    @include bodyM;
+    width: 167px;
+    height: 56px;
+  }
+}
+
+@mixin buttonMod {
+  width: 167px;
+  height: 56px;
+
+  @include media-desktop {
+    height: 63px;
   }
 }
 

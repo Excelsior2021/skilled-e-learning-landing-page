@@ -56,10 +56,7 @@ body {
   }
 
   &__button {
-    @include bodyM;
     @include button;
-    width: 140px;
-    height: 48px;
     background-color: $navy;
     border-radius: 28px;
     z-index: 10;
@@ -109,6 +106,10 @@ body {
       width: 398px;
       margin-top: 100px;
     }
+
+    @include media-desktop {
+      width: 457px;
+    }
   }
 
   &__image-container {
@@ -134,22 +135,35 @@ body {
     @include headingL;
     color: $navy;
     margin-bottom: 26px;
+
+    @include media-desktop {
+      @include headingXL;
+    }
   }
 
   &__text {
     @include bodyS;
     color: $grey;
     margin-bottom: 24px;
+
+    @include media-desktop {
+      @include bodyM;
+    }
   }
 
   &__button {
     @include bodyS;
     @include orange-pink;
     @include button;
+    @include buttonMod;
     width: 167px;
     height: 56px;
     border-radius: 31.5px;
     margin-bottom: 24px;
+
+    @include media-desktop {
+      @include bodyM;
+    }
   }
 }
 
@@ -177,6 +191,10 @@ body {
   &__section-heading {
     @include headingS;
     color: $white;
+
+    @include media-desktop {
+      @include headingM;
+    }
   }
 
   &--heading {
@@ -252,7 +270,6 @@ body {
   }
 
   &__button {
-    @include bodyM;
     @include button;
     @include purple-pink;
     width: 140px;

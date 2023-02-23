@@ -33,11 +33,24 @@ body {
   font-size: 1.6rem;
   font-family: "Plus-Jakarta-Sans-Extra-Bold";
   background: linear-gradient(white, #f2f2f2);
+  margin: auto;
+}
+
+.max-width-hero {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .header {
   display: flex;
   justify-content: center;
+}
+@media (min-width: 1110px) {
+  .header {
+    max-width: 1110px;
+    margin: auto;
+  }
 }
 .header__container {
   display: flex;
@@ -49,11 +62,6 @@ body {
 @media (min-width: 768px) {
   .header__container {
     margin: 24px 40px;
-  }
-}
-@media (min-width: 1024px) {
-  .header__container {
-    max-width: 1024px;
   }
 }
 .header__button {
@@ -87,6 +95,13 @@ body {
     margin: 24px 40px;
   }
 }
+@media (min-width: 1110px) {
+  .main {
+    max-width: 1110px;
+    margin: auto;
+    padding: 40px;
+  }
+}
 @media (min-width: 768px) {
   .main__section {
     display: flex;
@@ -95,47 +110,14 @@ body {
     margin-top: 150px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1110px) {
   .main__section {
-    max-width: 1024px;
-    margin: auto;
     margin-top: 200px;
   }
 }
-.main__section-heading {
-  font-family: "Plus-Jakarta-Sans-Extra-Bold";
-  font-size: 24px;
-  line-height: 28px;
-  background: linear-gradient(#ff6f48, #f02aa6);
-  color: white;
-  height: 120px;
-  border-radius: 10px;
-  padding-top: 28px;
-  padding-left: 28px;
-  margin-bottom: 40px;
-}
-@media (min-width: 768px) {
-  .main__section-heading {
-    width: 320px;
-    height: 260px;
-    margin: 40px 10px;
-    padding-top: 56px;
-    padding-left: 32px;
-  }
-}
-@media (min-width: 1024px) {
-  .main__section-heading {
-    font-family: "Plus-Jakarta-Sans-Extra-Bold";
-    font-size: 32px;
-    line-height: 40px;
-    height: 322px;
-    padding-top: 64px;
-  }
-}
 
-@media (min-width: 1024px) {
+@media (min-width: 1110px) {
   .hero {
-    max-width: 1024px;
     margin: auto;
   }
 }
@@ -145,24 +127,23 @@ body {
     margin-top: 100px;
   }
 }
+@media (min-width: 768px) {
+  .hero__image-container {
+    position: absolute;
+    top: -200px;
+    right: -300px;
+  }
+}
+@media (min-width: 1110px) {
+  .hero__image-container {
+    top: -260px;
+    right: -350px;
+  }
+}
 .hero__image {
   display: block;
   margin: auto;
   max-width: 100%;
-}
-@media (min-width: 768px) {
-  .hero__image {
-    position: absolute;
-    top: -80px;
-    left: 380px;
-  }
-}
-@media (min-width: 1024px) {
-  .hero__image {
-    top: -220px;
-    left: 480px;
-    right: 0;
-  }
 }
 .hero__heading {
   font-family: "Plus-Jakarta-Sans-Extra-Bold";
@@ -211,22 +192,43 @@ body {
   .card {
     width: 320px;
     height: 260px;
-    margin: 40px 10px;
+    margin: 40px 0;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1110px) {
   .card {
     height: 322px;
   }
 }
-@media (min-width: 768px) {
-  .card--odd {
-    margin-left: 4px;
-  }
+.card__section-heading {
+  font-family: "Plus-Jakarta-Sans-Extra-Bold";
+  font-size: 24px;
+  line-height: 28px;
+  color: white;
+}
+.card--heading {
+  background: linear-gradient(#ff6f48, #f02aa6);
+  height: 120px;
+  border-radius: 10px;
+  padding-top: 28px;
+  padding-left: 28px;
+  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
-  .card--even {
-    margin-right: 4px;
+  .card--heading {
+    width: 320px;
+    height: 260px;
+    margin: 40px 0;
+    padding-top: 56px;
+  }
+}
+@media (min-width: 1110px) {
+  .card--heading {
+    font-family: "Plus-Jakarta-Sans-Extra-Bold";
+    font-size: 32px;
+    line-height: 40px;
+    height: 322px;
+    padding-top: 64px;
   }
 }
 .card__icon {
@@ -239,7 +241,7 @@ body {
   margin-top: 24px;
   margin-bottom: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1110px) {
   .card__heading {
     font-family: "Plus-Jakarta-Sans-Extra-Bold";
     font-size: 24px;
@@ -252,7 +254,7 @@ body {
   color: #83869a;
   margin-bottom: 24px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1110px) {
   .card__text {
     font-family: "Plus-Jakarta-Sans-Medium";
     font-size: 18px;
@@ -271,10 +273,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1024px;
+  max-width: 1110px;
   height: 120px;
   margin: auto;
   padding: 16px;
+}
+@media (min-width: 768px) {
+  .footer__container {
+    padding: 40px;
+  }
 }
 .footer__button {
   font-family: "Plus-Jakarta-Sans-Medium";

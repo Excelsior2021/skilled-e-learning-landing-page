@@ -62,7 +62,7 @@
 }
 
 @mixin media-desktop {
-  @media (min-width: 1024px) {
+  @media (min-width: 1110px) {
     @content;
   }
 }

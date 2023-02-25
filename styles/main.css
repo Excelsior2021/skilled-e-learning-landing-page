@@ -171,6 +171,7 @@ body {
     font-family: "Plus-Jakarta-Sans-Extra-Bold";
     font-size: 56px;
     line-height: 70px;
+    margin-bottom: 30px;
   }
 }
 .hero__text {
@@ -185,6 +186,7 @@ body {
     font-family: "Plus-Jakarta-Sans-Medium";
     font-size: 18px;
     line-height: 28px;
+    margin-bottom: 40px;
   }
 }
 .hero__button {

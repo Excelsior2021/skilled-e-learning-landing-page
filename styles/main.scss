@@ -138,6 +138,7 @@ body {
 
     @include media-desktop {
       @include headingXL;
+      margin-bottom: 30px;
     }
   }
 
@@ -148,6 +149,7 @@ body {
 
     @include media-desktop {
       @include bodyM;
+      margin-bottom: 40px;
     }
   }
 
@@ -171,7 +173,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   background-color: white;
   margin: 40px auto;
   padding: 28px;

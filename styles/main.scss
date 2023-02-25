@@ -171,7 +171,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
   background-color: white;
   margin: 40px auto;
   padding: 28px;
@@ -232,6 +232,7 @@ body {
 
     @include media-desktop {
       @include headingS;
+      margin-bottom: 24px;
     }
   }
 
@@ -247,8 +248,19 @@ body {
   }
 
   &__link {
-    color: $pink;
+    color: $dark-pink;
     text-transform: capitalize;
+    text-decoration: none;
+    justify-self: end;
+    margin-top: auto;
+
+    &:hover {
+      color: $pink;
+    }
+
+    @include media-desktop {
+      font-size: 18px;
+    }
   }
 }
 

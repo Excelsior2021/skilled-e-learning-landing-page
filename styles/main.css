@@ -237,7 +237,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background-color: white;
   margin: 40px auto;
   padding: 28px;
@@ -309,6 +308,7 @@ body {
     font-family: "Plus-Jakarta-Sans-Extra-Bold";
     font-size: 24px;
     line-height: 28px;
+    margin-bottom: 24px;
   }
 }
 .card__text {
@@ -327,6 +327,17 @@ body {
 .card__link {
   color: #f74780;
   text-transform: capitalize;
+  text-decoration: none;
+  justify-self: end;
+  margin-top: auto;
+}
+.card__link:hover {
+  color: #ffa7c3;
+}
+@media (min-width: 1110px) {
+  .card__link {
+    font-size: 18px;
+  }
 }
 
 .footer {
